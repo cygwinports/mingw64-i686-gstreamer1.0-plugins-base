@@ -4,7 +4,7 @@ GST_PLUGINS_DISABLE="alsa ivorbis libvisual x xvideo"
 inherit cross gst-plugins
 
 NAME="mingw64-i686-gstreamer1.0-plugins-base"
-VERSION=1.0.7
+VERSION=1.0.10
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 Base Plug-ins for Win32 toolchain"
@@ -14,7 +14,7 @@ types of elements one would want to write for GStreamer. It also contains
 helper libraries and base classes useful for writing elements. A wide range
 of video and audio decoders, encoders, and filters are included."
 
-CYGCONF_ARGS="--disable-introspection"
+CYGCONF_ARGS="--disable-introspection --disable-static"
 MAKEOPTS+=" bin_PROGRAMS= man_MANS= "
 
 KEEP_LA_FILES="none"
